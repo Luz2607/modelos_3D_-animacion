@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>three.js webgl - FBX loader</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <!-- ✅ Tus estilos globales -->
+    <link type="text/css" rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <!-- ✅ Créditos originales de three.js y Mixamo -->
+    <div id="info">
+      <a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - 
+      FBXLoader<br />
+      Character and animation from
+      <a href="https://www.mixamo.com/" target="_blank" rel="noopener">Mixamo</a>
+    </div>
+
+    <!-- ✅ Créditos personales -->
+    <div style="position:fixed; bottom:10px; right:10px; background:rgba(0,0,0,.5); color:#fff; padding:5px 10px; border-radius:5px; font-family:sans-serif; font-size:12px;">
+      Créditos: Luz María Cruz García 21200647
+    </div>
+
+    <!-- Importmap para los módulos -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "./build/three.module.js",
+          "three/addons/": "./jsm/"
+        }
+      }
+    </script>
+
+    <!-- ✅ Tu código JS separado -->
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
